@@ -1,0 +1,124 @@
+
+17. Printing statistics.
+
+=== a08_add2 ===
+
+   Number of wires:                  5
+   Number of wire bits:              9
+   Number of public wires:           5
+   Number of public wire bits:       9
+   Number of ports:                  3
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     a08_full_adder                  1
+     a08_half_adder                  1
+
+   Area for cell type \a08_half_adder is unknown!
+   Area for cell type \a08_full_adder is unknown!
+
+=== a08_add3 ===
+
+   Number of wires:                  6
+   Number of wire bits:             13
+   Number of public wires:           6
+   Number of public wire bits:      13
+   Number of ports:                  3
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     a08_full_adder                  2
+     a08_half_adder                  1
+
+   Area for cell type \a08_half_adder is unknown!
+   Area for cell type \a08_full_adder is unknown!
+
+=== a08_full_adder ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sky130_fd_sc_hd__maj3_1         1
+     sky130_fd_sc_hd__xor3_1         1
+
+   Chip area for module '\a08_full_adder': 33.782400
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== a08_half_adder ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sky130_fd_sc_hd__and2_0         1
+     sky130_fd_sc_hd__xor2_1         1
+
+   Chip area for module '\a08_half_adder': 15.014400
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== a08_popcount8 ===
+
+   Number of wires:                 16
+   Number of wire bits:             26
+   Number of public wires:          16
+   Number of public wire bits:      26
+   Number of ports:                  2
+   Number of port bits:             12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     a08_add2                        2
+     a08_add3                        1
+     a08_half_adder                  4
+
+   Area for cell type \a08_half_adder is unknown!
+   Area for cell type \a08_add2 is unknown!
+   Area for cell type \a08_add3 is unknown!
+
+=== design hierarchy ===
+
+   a08_popcount8                     1
+     a08_add2                        2
+       a08_full_adder                1
+       a08_half_adder                1
+     a08_add3                        1
+       a08_full_adder                2
+       a08_half_adder                1
+     a08_half_adder                  4
+
+   Number of wires:                 80
+   Number of wire bits:            105
+   Number of public wires:          80
+   Number of public wire bits:     105
+   Number of ports:                 59
+   Number of port bits:             84
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     sky130_fd_sc_hd__and2_0         7
+     sky130_fd_sc_hd__maj3_1         4
+     sky130_fd_sc_hd__xor2_1         7
+     sky130_fd_sc_hd__xor3_1         4
+
+   Chip area for top module '\a08_popcount8': 240.230400
+     of which used for sequential elements: 0.000000 (0.00%)
+

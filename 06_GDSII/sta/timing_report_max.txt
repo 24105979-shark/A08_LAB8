@@ -1,0 +1,159 @@
+Startpoint: a[6] (input port clocked by vclk)
+Endpoint: ones[3] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock vclk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00 v input external delay
+     2    0.01    0.00    0.00    0.00 v a[6] (in)
+                                         a[6] (net)
+                  0.00    0.00    0.00 v u_l1_3/_1_/A (sky130_fd_sc_hd__xor2_1)
+     2    0.01    0.18    0.17    0.17 ^ u_l1_3/_1_/X (sky130_fd_sc_hd__xor2_1)
+                                         l1_3[0] (net)
+                  0.18    0.00    0.17 ^ u_l2_1/u_ha0/_0_/B (sky130_fd_sc_hd__and2_0)
+     2    0.01    0.11    0.19    0.36 ^ u_l2_1/u_ha0/_0_/X (sky130_fd_sc_hd__and2_0)
+                                         u_l2_1/c0 (net)
+                  0.11    0.00    0.36 ^ u_l2_1/u_fa1/_0_/C (sky130_fd_sc_hd__xor3_1)
+     2    0.01    0.10    0.26    0.62 v u_l2_1/u_fa1/_0_/X (sky130_fd_sc_hd__xor3_1)
+                                         l2_1[1] (net)
+                  0.10    0.00    0.62 v u_l3_0/u_fa1/_1_/B (sky130_fd_sc_hd__maj3_1)
+     2    0.01    0.09    0.37    0.98 v u_l3_0/u_fa1/_1_/X (sky130_fd_sc_hd__maj3_1)
+                                         u_l3_0/c1 (net)
+                  0.09    0.00    0.98 v u_l3_0/u_fa2/_1_/C (sky130_fd_sc_hd__maj3_1)
+     1    0.00    0.04    0.33    1.31 v u_l3_0/u_fa2/_1_/X (sky130_fd_sc_hd__maj3_1)
+                                         ones[3] (net)
+                  0.04    0.00    1.31 v ones[3] (out)
+                                  1.31   data arrival time
+
+                  0.00   10.00   10.00   clock vclk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                          0.00   10.00   output external delay
+                                 10.00   data required time
+-----------------------------------------------------------------------------
+                                 10.00   data required time
+                                 -1.31   data arrival time
+-----------------------------------------------------------------------------
+                                  8.69   slack (MET)
+
+
+Startpoint: a[6] (input port clocked by vclk)
+Endpoint: ones[2] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock vclk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00 v input external delay
+     2    0.01    0.00    0.00    0.00 v a[6] (in)
+                                         a[6] (net)
+                  0.00    0.00    0.00 v u_l1_3/_1_/A (sky130_fd_sc_hd__xor2_1)
+     2    0.01    0.18    0.17    0.17 ^ u_l1_3/_1_/X (sky130_fd_sc_hd__xor2_1)
+                                         l1_3[0] (net)
+                  0.18    0.00    0.17 ^ u_l2_1/u_ha0/_0_/B (sky130_fd_sc_hd__and2_0)
+     2    0.01    0.11    0.19    0.36 ^ u_l2_1/u_ha0/_0_/X (sky130_fd_sc_hd__and2_0)
+                                         u_l2_1/c0 (net)
+                  0.11    0.00    0.36 ^ u_l2_1/u_fa1/_0_/C (sky130_fd_sc_hd__xor3_1)
+     2    0.01    0.10    0.26    0.62 v u_l2_1/u_fa1/_0_/X (sky130_fd_sc_hd__xor3_1)
+                                         l2_1[1] (net)
+                  0.10    0.00    0.62 v u_l3_0/u_fa1/_1_/B (sky130_fd_sc_hd__maj3_1)
+     2    0.01    0.09    0.37    0.98 v u_l3_0/u_fa1/_1_/X (sky130_fd_sc_hd__maj3_1)
+                                         u_l3_0/c1 (net)
+                  0.09    0.00    0.98 v u_l3_0/u_fa2/_0_/C (sky130_fd_sc_hd__xor3_1)
+     1    0.00    0.03    0.17    1.15 ^ u_l3_0/u_fa2/_0_/X (sky130_fd_sc_hd__xor3_1)
+                                         ones[2] (net)
+                  0.03    0.00    1.15 ^ ones[2] (out)
+                                  1.15   data arrival time
+
+                  0.00   10.00   10.00   clock vclk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                          0.00   10.00   output external delay
+                                 10.00   data required time
+-----------------------------------------------------------------------------
+                                 10.00   data required time
+                                 -1.15   data arrival time
+-----------------------------------------------------------------------------
+                                  8.85   slack (MET)
+
+
+Startpoint: a[2] (input port clocked by vclk)
+Endpoint: ones[1] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock vclk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00 v input external delay
+     2    0.01    0.00    0.00    0.00 v a[2] (in)
+                                         a[2] (net)
+                  0.00    0.00    0.00 v u_l1_1/_1_/A (sky130_fd_sc_hd__xor2_1)
+     2    0.01    0.18    0.17    0.17 ^ u_l1_1/_1_/X (sky130_fd_sc_hd__xor2_1)
+                                         l1_1[0] (net)
+                  0.18    0.00    0.17 ^ u_l2_0/u_ha0/_0_/B (sky130_fd_sc_hd__and2_0)
+     2    0.01    0.11    0.19    0.36 ^ u_l2_0/u_ha0/_0_/X (sky130_fd_sc_hd__and2_0)
+                                         u_l2_0/c0 (net)
+                  0.11    0.00    0.36 ^ u_l2_0/u_fa1/_0_/C (sky130_fd_sc_hd__xor3_1)
+     2    0.00    0.08    0.24    0.60 v u_l2_0/u_fa1/_0_/X (sky130_fd_sc_hd__xor3_1)
+                                         l2_0[1] (net)
+                  0.08    0.00    0.60 v u_l3_0/u_fa1/_0_/A (sky130_fd_sc_hd__xor3_1)
+     1    0.00    0.03    0.34    0.94 ^ u_l3_0/u_fa1/_0_/X (sky130_fd_sc_hd__xor3_1)
+                                         ones[1] (net)
+                  0.03    0.00    0.94 ^ ones[1] (out)
+                                  0.94   data arrival time
+
+                  0.00   10.00   10.00   clock vclk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                          0.00   10.00   output external delay
+                                 10.00   data required time
+-----------------------------------------------------------------------------
+                                 10.00   data required time
+                                 -0.94   data arrival time
+-----------------------------------------------------------------------------
+                                  9.06   slack (MET)
+
+
+Startpoint: a[6] (input port clocked by vclk)
+Endpoint: ones[0] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock vclk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00 v input external delay
+     2    0.01    0.00    0.00    0.00 v a[6] (in)
+                                         a[6] (net)
+                  0.00    0.00    0.00 v u_l1_3/_1_/A (sky130_fd_sc_hd__xor2_1)
+     2    0.01    0.18    0.17    0.17 ^ u_l1_3/_1_/X (sky130_fd_sc_hd__xor2_1)
+                                         l1_3[0] (net)
+                  0.18    0.00    0.17 ^ u_l2_1/u_ha0/_1_/B (sky130_fd_sc_hd__xor2_1)
+     2    0.01    0.18    0.21    0.37 ^ u_l2_1/u_ha0/_1_/X (sky130_fd_sc_hd__xor2_1)
+                                         l2_1[0] (net)
+                  0.18    0.00    0.37 ^ u_l3_0/u_ha0/_1_/B (sky130_fd_sc_hd__xor2_1)
+     1    0.00    0.06    0.12    0.49 ^ u_l3_0/u_ha0/_1_/X (sky130_fd_sc_hd__xor2_1)
+                                         ones[0] (net)
+                  0.06    0.00    0.49 ^ ones[0] (out)
+                                  0.49   data arrival time
+
+                  0.00   10.00   10.00   clock vclk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                          0.00   10.00   output external delay
+                                 10.00   data required time
+-----------------------------------------------------------------------------
+                                 10.00   data required time
+                                 -0.49   data arrival time
+-----------------------------------------------------------------------------
+                                  9.51   slack (MET)
+
+

@@ -1,0 +1,20 @@
+*.bak
+*.vcd
+__pycache__/
+*.pyc
+.venv/
+.venv-*/
+
+# Generated physical-design run files
+04_IMPLEMENTATION/scripts/runs/
+
+# Simulation binaries
+05_VERIFICATION/*.vvp
+05_VERIFICATION/a08_wave_sim
+
+# Generated physical-design run files
+04_IMPLEMENTATION/scripts/runs/
+
+# Simulation binaries
+05_VERIFICATION/*.vvp
+05_VERIFICATION/a08_wave_sim
